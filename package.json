@@ -1,14 +1,26 @@
 {
   "name": "crash-course",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a project for learning node with Net Ninja YouTube course",
   "main": "files.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Naomi Earle",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naomiearledev/node-crash-course.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naomiearledev/node-crash-course/issues"
+  },
+  "homepage": "https://github.com/naomiearledev/node-crash-course#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
