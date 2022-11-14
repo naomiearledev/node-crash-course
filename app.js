@@ -1,11 +1,18 @@
 const express = require('express');
-const res = require('express/lib/response');
+const morgan = require('morgan');
+
+// Express app
 const app = express();
 
+// Register view engine
 app.set('view engine', 'ejs');
 
 // Routing
 app.listen(3000);
+
+// Middleware and static files
+app.use(express.static('public'));
+app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
   const blogs = [
